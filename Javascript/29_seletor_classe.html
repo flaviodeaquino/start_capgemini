@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Base</title>
+    <script>
+
+        function exibirTexto(){
+
+            //Armazenar a tag com a classe texto
+            var campo = document.getElementsByClassName("texto")[2];
+
+            //Exibir o conteúdo da variável campo
+            alert(campo.innerHTML);
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="exibirTexto()">Clique aqui!</button>
+    <h1 class="texto">Lorem Ipsum Dolor</h1>
+    <h2 class="texto">Lorem Ipsum</h2>
+    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste exercitationem repudiandae perspiciatis? Beatae, sint blanditiis tempore maiores repellat rerum quae illo numquam laborum repellendus delectus, tempora, dolorem tenetur sunt nobis!</p>
+</body>
+</html>
