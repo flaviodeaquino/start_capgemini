@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Base - jQuery</title>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script>
+
+        //Ao carregar o documento
+        $(document).ready(function(){
+            
+            //Ocultar
+            $(".ocultar").click(function(){
+                $(".mensagem").slideUp();
+            });
+
+            //Exibir
+            $(".exibir").click(function(){
+                $(".mensagem").slideDown();
+            })
+        });
+
+    </script>
+
+</head>
+<body>
+    <h1 class="exibir">Exibir</h1>
+    <h1 class="ocultar">Ocultar</h1>
+    <hr>
+    <h1 class="mensagem">Olá!</h1>
+</body>
+</html>

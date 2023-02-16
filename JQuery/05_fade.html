@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Base - jQuery</title>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script>
+
+        //Ao carregar o documento
+        $(document).ready(function(){
+            
+            //Ocultar H1
+            $("h1").css("display","none");
+
+            //Exibir H1
+            $("#exibir").click(function(){
+                $("h1").fadeIn();
+            });
+
+            //Ocultar o H1
+            $("#ocultar").click(function(){
+                $("h1").fadeOut();
+            });
+
+            /*
+                TEMPO
+                1 - Default 0,4s
+                2 - Slow 0,6s
+                3 - Valor em milissegundos
+            */
+        });
+
+    </script>
+
+</head>
+<body>
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+    <hr>
+    <h1>Aprendendo jQuery</h1>
+</body>
+</html>
