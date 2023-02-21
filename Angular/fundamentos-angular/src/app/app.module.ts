@@ -10,23 +10,25 @@ import { PipeCustomizadoComponent } from './pipe-customizado/pipe-customizado.co
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { RenderizandoListasComponent } from './renderizando-listas/renderizando-listas.component';
+import { ComponentePersonalizadoComponent } from "./componente-personalizado/componente-personalizado.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    PrimeiroComponenteComponent,
-    SegundoComponentComponent,
-    MultiplicaPorPipe,
-    PipeCustomizadoComponent,
-    TwoWayDataBindingComponent,
-    RenderizandoListasComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        PrimeiroComponenteComponent,
+        SegundoComponentComponent,
+        MultiplicaPorPipe,
+        PipeCustomizadoComponent,
+        TwoWayDataBindingComponent,
+        RenderizandoListasComponent,
+        ComponentePersonalizadoComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
