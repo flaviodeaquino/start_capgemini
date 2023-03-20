@@ -42,5 +42,5 @@ public class LinkedListCarros {
         //pega o ultimo
         System.out.println(cars.getLast());
         System.out.println(cars);
-    }  
+    }
 }
